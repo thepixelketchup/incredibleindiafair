@@ -1,238 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Incredible India Fair 2026 | Amsterdam (Leoff Edition)</title>
+    <title>Coming Soon | Incredible India Fair 2026</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@800;900&family=Plus+Jakarta+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@800;900&family=Plus+Jakarta+Sans:wght@400;500;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Scoped styles specifically for the coming soon form */
+        .subscribe-form {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            max-width: 600px;
+            margin: 0 auto;
+            flex-wrap: wrap;
+        }
+
+        .subscribe-input {
+            flex: 1;
+            min-width: 250px;
+            padding: 1.5rem 2rem;
+            border-radius: 100px;
+            border: 3px solid var(--clr-dark);
+            font-family: var(--font-body);
+            font-size: 1.1rem;
+            outline: none;
+            box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.1);
+            transition: var(--transition-smooth);
+        }
+
+        .subscribe-input:focus {
+            box-shadow: 10px 10px 0 var(--clr-dark);
+            transform: translateY(-2px);
+        }
+
+        .subscribe-btn {
+            background-color: var(--clr-dark);
+            color: white;
+            margin: 0;
+            padding: 1.5rem 3rem;
+            border-radius: 100px;
+            border: 3px solid var(--clr-dark);
+            font-size: 1.1rem;
+            cursor: pointer;
+            font-family: var(--font-heading);
+            font-weight: 800;
+            text-transform: uppercase;
+            box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.1);
+            transition: var(--transition-smooth);
+        }
+
+        .subscribe-btn:hover {
+            box-shadow: 10px 10px 0 var(--clr-yellow);
+            transform: translateY(-2px);
+        }
+
+        /* Mobile Adjustments */
+        @media (max-width: 768px) {
+            .nav {
+                padding: 1rem;
+                gap: 1rem !important;
+                flex-wrap: wrap;
+                justify-content: center;
+                border-radius: 20px !important;
+            }
+
+            .nav-link[style*="margin-right: auto"] {
+                margin-right: 0 !important;
+                width: 100%;
+                text-align: center;
+                margin-bottom: 0.5rem;
+            }
+
+            .nav-link {
+                font-size: 0.8rem !important;
+            }
+
+            section.section {
+                padding-top: 12rem !important;
+                padding-bottom: 8rem !important;
+            }
+
+            .subscribe-input {
+                width: 100%;
+                min-width: unset;
+                text-align: center;
+            }
+
+            .subscribe-btn {
+                width: 100%;
+            }
+
+            .ticker-item {
+                font-size: 1.2rem !important;
+            }
+
+            footer .container {
+                flex-direction: column;
+                text-align: center;
+                gap: 2rem;
+            }
+        }
+    </style>
 </head>
+
 <body>
 
     <nav class="nav">
         <a href="index.html" class="nav-link" style="font-size: 1.2rem; margin-right: auto;">INCREDIBLE INDIA FAIR</a>
-        <a href="index.html" class="nav-link">Home</a>
-        <a href="about.html" class="nav-link">Our Story</a>
-        <a href="experiences.html" class="nav-link">Experiences</a>
-        <a href="visit.html" class="nav-link">Plan Visit</a>
-        <a href="exhibit.html" class="nav-link">Exhibit</a>
-        <a href="contact.html" class="nav-link" style="background: var(--clr-red); color: white; padding: 0.5rem 1.5rem; border-radius: 50px;">Contact</a>
     </nav>
 
     <!-- Hero Section -->
-    <section class="section bg-red" style="padding-top: 12rem;">
-        <div class="container" style="display: grid; grid-template-columns: 1fr 1.2fr; gap: 4rem; align-items: center;">
+    <section class="section bg-red" style="padding-top: 10rem; min-height: 100vh; display: flex; align-items: center;">
+        <div class="container" style="text-align: center; max-width: 900px; position: relative;">
             <div class="hero-content" style="position: relative; z-index: 10;">
-                <span style="text-transform: uppercase; letter-spacing: 0.3em; font-weight: 700; color: var(--clr-yellow); display: block; margin-bottom: 1rem;" class="reveal-text"><span>Amsterdam • September 2026</span></span>
-                <h1 style="font-size: clamp(4rem, 10vw, 8rem); line-height: 0.9;">
-                    <span class="reveal-text"><span>INDIA,</span></span>
-                    <span class="reveal-text"><span>BROUGHT</span></span>
-                    <span style="color: var(--clr-yellow);" class="reveal-text"><span>TO YOU.</span></span>
+                <div class="image-slant"
+                    style="display: inline-block; background: white; padding: 0.5rem 2rem; border-radius: 50px; margin-bottom: 2.5rem; border: 3px solid var(--clr-dark); box-shadow: 5px 5px 0 var(--clr-dark);">
+                    <span
+                        style="text-transform: uppercase; letter-spacing: 0.2em; font-weight: 800; color: var(--clr-dark); font-family: var(--font-heading); font-size: 1rem;">Amsterdam
+                        • September 2026</span>
+                </div>
+
+                <h1 style="font-size: clamp(4rem, 12vw, 9rem); line-height: 0.9; margin-bottom: 2rem;">
+                    <span class="reveal-text"><span>COMING</span></span>
+                    <span style="color: var(--clr-yellow);" class="reveal-text"><span>SOON</span></span>
                 </h1>
-                <p style="font-size: 1.5rem; margin-top: 2rem; max-width: 500px;" class="reveal-text">
-                    <span>A curated celebration of Indian craft, design, food, and culture — coming to the heart of Amsterdam.</span>
+
+                <p style="font-size: 1.25rem; font-weight: 500; margin: 0 auto 3rem; max-width: 600px; line-height: 1.6;"
+                    class="reveal-text">
+                    <span>A curated celebration of Indian craft, design, food, and culture, coming to the heart of
+                        Amsterdam. Drop your email to be the first to know when we launch our full experience.</span>
                 </p>
-                <div style="display: flex; gap: 1rem; margin-top: 3.5rem;">
-                    <a href="visit.html" class="btn btn-dark reveal-text" style="padding: 0; overflow: hidden; display: inline-block;">
-                        <span style="display: block; padding: 1.5rem 3rem;">Plan Your Visit</span>
-                    </a>
-                    <a href="exhibit.html" class="btn reveal-text" style="background: white; color: var(--clr-dark); padding: 0; overflow: hidden; display: inline-block;">
-                        <span style="display: block; padding: 1.5rem 3rem;">Exhibit With Us</span>
-                    </a>
-                </div>
+
+                <form action="#" method="POST" class="subscribe-form reveal-text" style="animation-delay: 0.2s;">
+                    <input type="email" placeholder="Enter your email address..." class="subscribe-input" required>
+                    <button type="submit" class="subscribe-btn">Notify Me</button>
+                </form>
             </div>
-            <div style="position: relative;">
-                <div class="image-slant" style="border: 15px solid white; border-radius: 40px; overflow: hidden; position: relative; z-index: 2;">
-                    <img src="assets/images/hero.png" alt="Incredible India Fair" style="width: 100%; height: auto; display: block;">
-                </div>
-                <div style="position: absolute; bottom: -5%; left: -10%; z-index: 3; background: var(--clr-teal); padding: 2rem; transform: rotate(-5deg); box-shadow: 10px 10px 0 var(--clr-dark);">
-                    <h3 style="font-size: 2.5rem; color: white;">15,000+<br>VISITORS</h3>
-                </div>
+
+            <!-- Decorative Elements -->
+            <div
+                style="position: absolute; top: -10%; left: -5%; width: 150px; height: 150px; background: var(--clr-pink); border-radius: 50%; border: 4px solid var(--clr-dark); z-index: 1;">
             </div>
-        </div>
-
-        <div class="wave-divider">
-            <svg viewBox="0 0 1440 320" preserveAspectRatio="none">
-                <path fill="#FFDE59" fill-opacity="1" d="M0,192L48,197.3C96,203,192,213,288,192C384,171,480,117,576,112C672,107,768,149,864,165.3C960,181,1056,171,1152,144C1248,117,1344,75,1392,53.3L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
-            </svg>
-        </div>
-    </section>
-
-    <!-- Info Marquee (Dates & Location) -->
-    <div class="ticker-wrap" style="background: var(--clr-yellow); border-bottom: 5px solid var(--clr-dark);">
-        <div class="ticker">
-            <span class="ticker-item">AMSTERDAM • B2C LIFESTYLE FAIR</span>
-            <span class="ticker-item">50+ ELITE BRANDS • SEPTEMBER 2026</span>
-            <span class="ticker-item">15000+ VISITORS</span>
-            <span class="ticker-item">AMSTERDAM • B2C LIFESTYLE FAIR</span>
-        </div>
-    </div>
-
-    <!-- About Section -->
-    <section class="section bg-yellow">
-        <div class="container" style="text-align: center; max-width: 1000px;">
-            <h2 style="font-size: clamp(3rem, 6vw, 6rem); margin-bottom: 2.5rem;" class="reveal-text"><span>A New Way to Experience Indian Craft</span></h2>
-            <p style="font-size: 1.5rem; line-height: 1.6; margin-bottom: 4rem;" class="reveal-text"><span>Incredible India Fair is a curated consumer fair in Amsterdam bringing together Indian handloom, handicrafts, design, food and cultural experiences in one contemporary setting.</span></p>
-            <a href="about.html" class="btn btn-dark">Our Story</a>
-        </div>
-
-        <div class="wave-divider">
-            <svg viewBox="0 0 1440 320" preserveAspectRatio="none">
-                <path fill="#4DAF94" fill-opacity="1" d="M0,64L48,80C96,96,192,128,288,128C384,128,480,96,576,106.7C672,117,768,171,864,186.7C960,203,1056,181,1152,149.3C1248,117,1344,75,1392,53.3L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
-            </svg>
-        </div>
-    </section>
-
-    <!-- Curated Discovery Grid (4 Categories as requested) -->
-    <section class="section" style="background-color: #1A1A4E; color: white;">
-        <div class="container">
-            <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 5rem;">
-                <div>
-                    <h2 style="font-size: clamp(3rem, 5vw, 5rem);" class="reveal-text"><span>Curated Discovery</span></h2>
-                    <p style="max-width: 500px; font-size: 1.25rem; margin-top: 1rem; opacity: 0.8;" class="reveal-text"><span>An architectural journey through six distinct lifestyle pavilions, showcasing the pinnacle of Indian artisanship.</span></p>
-                </div>
-            </div>
-            
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
-                <!-- Card 1: SHOP -->
-                <div class="image-slant" style="background: rgba(255,255,255,0.1); padding: 3rem; border-radius: 30px; border: 1px solid rgba(255,255,255,0.1);">
-                    <img src="https://images.unsplash.com/photo-1610030469915-9a08eb7251b1?q=80&w=800&auto=format&fit=crop" alt="Shop" style="width: 100%; height: 150px; object-fit: cover; border-radius: 20px; margin-bottom: 1.5rem;">
-                    <h3 style="font-size: 2.22rem; color: var(--clr-teal); margin-bottom: 1.5rem;">SHOP</h3>
-                    <p style="font-size: 1.1rem; opacity: 0.9;">Handcrafted textiles, decor, fashion, and artisanal jewellery.</p>
-                </div>
-                <!-- Card 2: TASTE -->
-                <div class="image-slant" style="background: rgba(255,255,255,0.1); padding: 3rem; border-radius: 30px; border: 1px solid rgba(255,255,255,0.1);">
-                    <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?q=80&w=800&auto=format&fit=crop" alt="Taste" style="width: 100%; height: 150px; object-fit: cover; border-radius: 20px; margin-bottom: 1.5rem;">
-                    <h3 style="font-size: 2.22rem; color: var(--clr-yellow); margin-bottom: 1.5rem;">TASTE</h3>
-                    <p style="font-size: 1.1rem; opacity: 0.9;">Regional Indian food and immersive culinary experiences.</p>
-                </div>
-                <!-- Card 3: DISCOVER -->
-                <div class="image-slant" style="background: rgba(255,255,255,0.1); padding: 3rem; border-radius: 30px; border: 1px solid rgba(255,255,255,0.1);">
-                    <img src="https://images.unsplash.com/photo-1617839625591-e5a789593135?q=80&w=800&auto=format&fit=crop" alt="Discover" style="width: 100%; height: 150px; object-fit: cover; border-radius: 20px; margin-bottom: 1.5rem;">
-                    <h3 style="font-size: 2.22rem; color: #FF9933; margin-bottom: 1.5rem;">DISCOVER</h3>
-                    <p style="font-size: 1.1rem; opacity: 0.9;">Workshops, live demonstrations, artisan interactions</p>
-                </div>
-                <!-- Card 4: TRAVEL -->
-                <div class="image-slant" style="background: rgba(255,255,255,0.1); padding: 3rem; border-radius: 30px; border: 1px solid rgba(255,255,255,0.1);">
-                    <img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?q=80&w=800&auto=format&fit=crop" alt="Travel" style="width: 100%; height: 150px; object-fit: cover; border-radius: 20px; margin-bottom: 1.5rem;">
-                    <h3 style="font-size: 2.22rem; color: var(--clr-teal); margin-bottom: 1.5rem;">TRAVEL</h3>
-                    <p style="font-size: 1.1rem; opacity: 0.9;">Experiential journeys, heritage trails, and bespoke travel narratives.</p>
-                </div>
-            </div>
-            
-            <div style="margin-top: 5rem; text-align: center;">
-                <a href="experiences.html" class="btn" style="background: #FF9933; color: var(--clr-dark); font-size: 1.25rem;">SEE ALL CATEGORIES</a>
-            </div>
-        </div>
-
-        <div class="wave-divider">
-            <svg viewBox="0 0 1440 320" preserveAspectRatio="none">
-                <path fill="#4A90E2" fill-opacity="1" d="M0,96L48,112C96,128,192,160,288,149.3C384,139,480,85,576,90.7C672,96,768,160,864,165.3C960,171,1056,117,1152,101.3C1248,85,1344,107,1392,117.3L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
-            </svg>
-        </div>
-    </section>
-
-    <!-- Cultural Programming Section -->
-    <section class="section bg-blue">
-        <div class="container" style="text-align: center;">
-            <span style="text-transform: uppercase; letter-spacing: 0.3em; font-weight: 700; color: var(--clr-yellow); display: block; margin-bottom: 1rem;">Cultural Programming</span>
-            <h2 style="font-size: clamp(3rem, 6vw, 4.5rem); color: white; margin-bottom: 3rem;" class="reveal-text"><span>Craft, Culture & Live Experiences</span></h2>
-            <p style="max-width: 800px; margin: 0 auto 5rem; font-size: 1.25rem;" class="reveal-text"><span>The fair brings together live craft demonstrations, workshops and cultural programming to create an immersive experience beyond retail.</span></p>
-            
-            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem;">
-                <div class="image-slant" style="background: white; border-radius: 30px; overflow: hidden;">
-                    <img src="https://images.unsplash.com/photo-1620718520092-b0548f07fb31?q=80&w=800&auto=format&fit=crop" alt="Weaving" style="width: 100%; height: 250px; object-fit: cover;">
-                    <h4 style="padding: 1.5rem; color: var(--clr-dark); font-size: 0.9rem; text-transform: uppercase;">WEAVING & TEXTILE DEMONSTRATIONS</h4>
-                </div>
-                <div class="image-slant" style="background: var(--clr-yellow); border-radius: 30px; overflow: hidden;">
-                    <img src="https://images.unsplash.com/photo-1627389955609-bc421636c74d?q=80&w=800&auto=format&fit=crop" alt="Printing" style="width: 100%; height: 250px; object-fit: cover;">
-                    <h4 style="padding: 1.5rem; color: var(--clr-dark); font-size: 0.9rem; text-transform: uppercase;">BLOCK PRINTING & CRAFT WORKSHOPS</h4>
-                </div>
-                <div class="image-slant" style="background: var(--clr-pink); border-radius: 30px; overflow: hidden;">
-                    <img src="https://images.unsplash.com/photo-1621451537084-482c73073a0f?q=80&w=800&auto=format&fit=crop" alt="Performances" style="width: 100%; height: 250px; object-fit: cover;">
-                    <h4 style="padding: 1.5rem; color: white; font-size: 0.9rem; text-transform: uppercase;">PERFORMANCES & CULTURAL SHOWCASES</h4>
-                </div>
+            <div
+                style="position: absolute; bottom: 10%; right: -10%; width: 100px; height: 100px; background: var(--clr-teal); border-radius: 50%; border: 4px solid var(--clr-dark); z-index: 1;">
             </div>
         </div>
 
         <div class="wave-divider" style="bottom: -1px;">
             <svg viewBox="0 0 1440 320" preserveAspectRatio="none">
-                <path fill="#FFDE59" fill-opacity="1" d="M0,160L80,181.3C160,203,320,245,480,240C640,235,800,181,960,170.7C1120,160,1280,192,1360,208L1440,224L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
+                <path fill="#FFDE59" fill-opacity="1"
+                    d="M0,192L48,197.3C96,203,192,213,288,192C384,171,480,117,576,112C672,107,768,149,864,165.3C960,181,1056,171,1152,144C1248,117,1344,75,1392,53.3L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                </path>
             </svg>
         </div>
     </section>
 
-    <!-- Dual Proposition -->
-    <section class="section bg-yellow" style="padding-top: 10rem;">
-        <div class="container" style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem;">
-            <div class="image-slant" style="background: white; padding: 5rem; border-radius: 60px; color: var(--clr-dark);">
-                <h2 style="font-size: 3.5rem; margin-bottom: 2rem;">Why Visit</h2>
-                <ul style="list-style: none; margin-bottom: 3rem; font-size: 1.25rem;">
-                    <li style="margin-bottom: 1rem; border-left: 4px solid var(--clr-red); padding-left: 1.5rem;">Discover handcrafted products</li>
-                    <li style="margin-bottom: 1rem; border-left: 4px solid var(--clr-red); padding-left: 1.5rem;">Explore textile traditions</li>
-                    <li style="margin-bottom: 1rem; border-left: 4px solid var(--clr-red); padding-left: 1.5rem;">Live craft demonstrations</li>
-                </ul>
-                <a href="visit.html" class="btn btn-dark">Plan Your Visit</a>
-            </div>
-            <div class="image-slant" style="background: var(--clr-pink); padding: 5rem; border-radius: 60px; color: white;">
-                <h2 style="font-size: 3.5rem; margin-bottom: 2rem;">Why Exhibit</h2>
-                <ul style="list-style: none; margin-bottom: 3rem; font-size: 1.25rem;">
-                    <li style="margin-bottom: 1rem; border-left: 4px solid white; padding-left: 1.5rem;">Reach 15,000+ visitors</li>
-                    <li style="margin-bottom: 1rem; border-left: 4px solid white; padding-left: 1.5rem;">Premium design setting</li>
-                    <li style="margin-bottom: 1rem; border-left: 4px solid white; padding-left: 1.5rem;">International platform</li>
-                </ul>
-                <a href="exhibit.html" class="btn" style="background: white; color: var(--clr-dark);">Apply Now</a>
-            </div>
+    <!-- Info Marquee (Dates & Location) -->
+    <div class="ticker-wrap"
+        style="background: var(--clr-yellow); border-bottom: 5px solid var(--clr-dark); margin-top: -1px; position: relative; z-index: 20;">
+        <div class="ticker">
+            <span class="ticker-item">AMSTERDAM • B2C LIFESTYLE FAIR</span>
+            <span class="ticker-item">50+ ELITE BRANDS • SEPTEMBER 2026</span>
+            <span class="ticker-item" style="color: var(--clr-dark); font-weight: 900;">• COMING SOON •</span>
+            <span class="ticker-item">AMSTERDAM • B2C LIFESTYLE FAIR</span>
+            <span class="ticker-item">50+ ELITE BRANDS • SEPTEMBER 2026</span>
+            <span class="ticker-item" style="color: var(--clr-dark); font-weight: 900;">• COMING SOON •</span>
         </div>
-    </section>
+    </div>
 
-    <!-- Partner Marquee -->
-    <section class="section bg-dark" style="padding: 10rem 2rem;">
-        <div class="container" style="text-align: center;">
-            <h2 style="margin-bottom: 5rem; font-size: 3rem; color: var(--clr-yellow);" class="reveal-text"><span>Our Partners & Sponsors</span></h2>
-        </div>
-        <div class="ticker-wrap" style="background: transparent; border: none; margin-top: 2rem;">
-                <div class="ticker" style="animation-duration: 40s;">
-                    <span class="ticker-item" style="font-size: 4rem; font-weight: 900; color: white;">Amsterdam City Council</span>
-                    <span class="ticker-item" style="font-size: 4rem; color: var(--clr-yellow);">✦</span>
-                    <span class="ticker-item" style="font-size: 4rem; font-weight: 900; color: white;">Amsterdam City Council</span>
-                    <span class="ticker-item" style="font-size: 4rem; color: var(--clr-teal);">✦</span>
-                </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer style="background: var(--clr-lavender); color: var(--clr-dark); padding: 8rem 2rem; border-top: 10px solid var(--clr-dark);">
-        <div class="container" style="display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 4rem;">
+    <!-- Footer (Minimal for Coming Soon) -->
+    <footer
+        style="background: var(--clr-lavender); color: var(--clr-dark); padding: 4rem 2rem; border-top: 10px solid var(--clr-dark);">
+        <div class="container"
+            style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 2rem;">
             <div>
-                <h2 style="font-size: 2.5rem; margin-bottom: 2rem;">INCREDIBLE INDIA FAIR</h2>
-                <p style="max-width: 400px; font-size: 1.2rem; opacity: 0.8;">A contemporary fair celebrating Indian handloom, craft, design and cultural experiences.</p>
+                <h2 style="font-size: 1.5rem; margin-bottom: 0.5rem;">INCREDIBLE INDIA FAIR</h2>
+                <p style="font-size: 1rem; opacity: 0.8; font-weight: 500;">&copy; 2026 Incredible India Fair
+                </p>
             </div>
-            <div>
-                <h4 style="margin-bottom: 2rem; text-transform: uppercase; letter-spacing: 0.1em;">Explore</h4>
-                <nav style="display: flex; flex-direction: column; gap: 1rem;">
-                    <a href="index.html" class="nav-link" style="margin: 0;">Home</a>
-                    <a href="about.html" class="nav-link" style="margin: 0;">Our Story</a>
-                    <a href="experiences.html" class="nav-link" style="margin: 0;">Experiences</a>
-                    <a href="visit.html" class="nav-link" style="margin: 0;">Plan Visit</a>
-                    <a href="contact.html" class="nav-link" style="margin: 0;">Contact</a>
-                </nav>
+            <div style="display: flex; gap: 1.5rem; justify-content: center;">
+                <a href="mailto:hello@thefourpursuits.com" class="nav-link" style="margin: 0; font-size: 1rem;">Contact
+                    Us</a>
             </div>
-            <div>
-                <h4 style="margin-bottom: 2rem; text-transform: uppercase; letter-spacing: 0.1em;">Follow</h4>
-                <div style="display: flex; gap: 1.5rem;">
-                    <a href="#" class="nav-link" style="margin: 0;">Instagram</a>
-                    <a href="#" class="nav-link" style="margin: 0;">Facebook</a>
-                </div>
-            </div>
-        </div>
-        <div class="container" style="margin-top: 8rem; border-top: 2px solid var(--clr-dark); padding-top: 4rem; text-align: center; font-weight: 800; text-transform: uppercase; letter-spacing: 0.2em;">
-            <p>&copy; 2026 Incredible India Fair Amsterdam.</p>
         </div>
     </footer>
 
     <script src="main.js"></script>
 </body>
+
 </html>
